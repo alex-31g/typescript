@@ -120,3 +120,30 @@ type T4 = Extract<string | number | (() => void), Function>;
 
 type T5 = NonNullable<string | number | undefined>; // string | number
 type T6 = NonNullable<string[] | null | undefined>; // string[]
+
+// ============================
+// ReturnType - создает тип, состоящий из возвращаемого функцией типа
+// ============================
+
+const fooo1 = (id: number, color: string) => {
+  return color;
+};
+type Ty1 = ReturnType<typeof fooo1>; // string
+const z1: Ty1 = 'hello';
+// const z2: Ty1 = 5; // error
+
+const fooo2 = (id: number, color: string) => {
+  return { id, color };
+};
+type Ty2 = ReturnType<typeof fooo2>; // { id: number; color: string; }
+const z3: Ty2 = {
+  id: 1,
+  color: 'red',
+};
+// const z4: Ty1 = 5; // error
+
+// ============================
+// ReturnType - создает тип, состоящий из типа экземпляра ф-ции конструктора
+// ============================
+
+// TODO

@@ -7,7 +7,7 @@ const isTrue: boolean = true;
 const num: number = 1;
 const str: string = 'hello';
 
-// задание нескольких типов
+// задание нескольких типов одной переменной
 const foo: number | string = 5;
 
 // undefined

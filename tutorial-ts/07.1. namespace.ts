@@ -38,5 +38,5 @@ namespace Utils_3 {
     `${name}:${age}`;
 }
 
-// И нам нужно получить доступ к ф-ции getPass в файле '7.2. namespace.ts'
-// Продолжение в файле '7.2. namespace.ts' ...
+// И нам нужно получить доступ к ф-ции getPass в файле '07.2. namespace.ts'
+// Продолжение в файле '07.2. namespace.ts' ...

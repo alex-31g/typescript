@@ -16,8 +16,8 @@
 - object
 
 ## 01.2. types guards
-- typeof,
-- instanceof,
+- typeof
+- instanceof
 - in
 
 ## 02. enum

@@ -121,10 +121,10 @@
 
 # typescript
 
-Создаем *package.json*:  
+Создать *package.json*:  
 `npm init -y` 
 
-Устанавливаем *typescript*:
+Установить *typescript*:
 `npm i -D typescript`
 
 Проверить установленную версию *typescript*:
@@ -151,21 +151,21 @@
 Чтобы исключать определенные файлы или папки из компиляции, в файле tsconfig.json добавляем новую настройку exclude, куда вносим, что мы хотим исключить:
 ```json
 	"exclude": [
-		"./module.ts"
+	  "./module.ts"
 	]
 ```
 
 Чтобы включить только определенные файлы или папки в компиляцию, в файле tsconfig.json добавляем настройку include:
 ```json
 	"include": [
-		"./src/**/*"
+	  "./src/**/*"
 	]
 ```
 
 Чтобы включить только определенные файлы в компиляцию, в файле tsconfig.json добавляем настройку files:
 ```json
 	"files": [
-		"./module.ts"
+	  "./module.ts"
 	]
 ```
 

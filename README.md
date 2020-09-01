@@ -117,9 +117,9 @@
 
 ## 12.2. decorators
 
-------------
+
+
 # typescript
-------------
 
 Создаем *package.json*:  
 `npm init -y` 
@@ -132,8 +132,6 @@
 
 Компилировать app.ts в app.js:
 `tsc app.ts`
-
-------------
 
 ## tsconfig.json 
 
@@ -148,32 +146,28 @@
 Чтобы каждый раз для компиляции не вводить команду *tsc*, используем команду, которая будет следить за изменениями:
 `tsc -w`
 
-------------
-
 ## Настройки tsconfig.json
 
 Чтобы исключать определенные файлы или папки из компиляции, в файле tsconfig.json добавляем новую настройку exclude, куда вносим, что мы хотим исключить:
 ```json
-  "exclude": [
-    "./module.ts"
+	"exclude": [
+		"./module.ts"
 	]
 ```
 
 Чтобы включить только определенные файлы или папки в компиляцию, в файле tsconfig.json добавляем настройку include:
 ```json
-  "include": [
-    "./src/**/*"
+	"include": [
+		"./src/**/*"
 	]
 ```
 
 Чтобы включить только определенные файлы в компиляцию, в файле tsconfig.json добавляем настройку files:
 ```json
-  "files": [
-    "./module.ts"
+	"files": [
+		"./module.ts"
 	]
 ```
-
-------------
 
 ## Настройки объекта "compilerOptions" в tsconfig.json
 
@@ -233,7 +227,7 @@ ts-файлы для разработки – храним в папке src, js
 
 ```js
 	function getData(data) {
-		console.log(data);
+	  console.log(data);
 	}
 ```
 
@@ -260,10 +254,10 @@ ts-файлы для разработки – храним в папке src, js
 ```
 
 Теперь, когда задано *"noImplicitReturns": true* и есть возможность, что из ф-ции ничего не вернется, получим ошибку:
-```json
+```js
 	function getData(a: number, b: number) {
 		if (a && b) {
-			return a * b;
+		  return a * b;
 		}
 	}
 ```
